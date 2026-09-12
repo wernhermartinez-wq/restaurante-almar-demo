@@ -10,6 +10,11 @@ npm run dev
 
 Abre `http://localhost:4173`. No requiere instalar dependencias.
 
+## Desplegar en Vercel
+
+Vercel ejecuta `npm run build` y publica la carpeta estática `dist`. El servidor
+de `server.js` se utiliza únicamente para desarrollo local.
+
 ## Adaptar a otro restaurante
 
 Los datos variables están centralizados en `content.js`. Sustituye ese contenido y los tres archivos de `assets/`; la estructura y las interacciones pueden mantenerse.

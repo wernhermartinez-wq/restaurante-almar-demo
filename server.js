@@ -4,7 +4,7 @@ const path = require('path');
 
 const root = __dirname;
 const port = Number(process.env.PORT || 4173);
-const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.svg': 'image/svg+xml' };
+const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml' };
 
 http.createServer((request, response) => {
   const requestPath = decodeURIComponent(request.url.split('?')[0]);
