@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <svg class="motion-filters" aria-hidden="true" width="0" height="0">
+    <filter id="title-water-ripple" x="-12%" y="-22%" width="124%" height="144%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.055" numOctaves="1" seed="8" result="water-noise">
+        <animate attributeName="baseFrequency" values="0.008 0.055; 0.012 0.075; 0.006 0.045; 0.01 0.065; 0.008 0.055" dur="2.2s" begin="0.08s" fill="freeze" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="water-noise" scale="0" xChannelSelector="R" yChannelSelector="B">
+        <animate attributeName="scale" values="0; 8; 3; 7; 2; 0" keyTimes="0; .18; .38; .58; .78; 1" dur="2.2s" begin="0.08s" fill="freeze" />
+      </feDisplacementMap>
+    </filter>
+  </svg>
   <a class="skip-link" href="#contenido">Ir al contenido</a>
   <header class="site-header" aria-label="Cabecera principal">
     <a class="brand" href="#inicio" aria-label="Almar, inicio">
@@ -28,7 +38,7 @@
       <div class="hero-shade"></div>
       <div class="hero-content">
         <p class="eyebrow" data-content="eyebrow">Restaurante mediterráneo · Gandía</p>
-        <h1 id="hero-title" data-content="headline"><span class="title-wave-line"><span>El Mediterráneo,</span></span><span class="title-wave-line"><span>puesto en la mesa.</span></span></h1>
+        <h1 class="water-title" id="hero-title" data-content="headline"><span class="title-wave-line"><span>El Mediterráneo,</span></span><span class="title-wave-line"><span>puesto en la mesa.</span></span></h1>
         <p class="hero-copy" data-content="introduction">Una cocina cuidada para compartir, en el corazón de Gandía.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#reservar" data-event="click_reservar">Reservar mesa <span aria-hidden="true">→</span></a>
