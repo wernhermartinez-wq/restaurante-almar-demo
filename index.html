@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a2b">
+  <meta name="description" content="Demo conceptual de experiencia digital para Restaurante Almar en Gandía.">
+  <title>Restaurante Almar · Gandía</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header" aria-label="Cabecera principal">
+    <a class="brand" href="#inicio" aria-label="Almar, inicio">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span><strong data-content="name">Almar</strong><small data-content="city">Gandía</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#propuesta">La propuesta</a>
+      <a href="#carta">Carta</a>
+      <a class="nav-cta" href="#reservar" data-event="click_reservar">Reservar</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-media" src="assets/almar-hero.webp" alt="Composición gastronómica mediterránea conceptual" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-content="eyebrow">Restaurante mediterráneo · Gandía</p>
+        <h1 id="hero-title" data-content="headline">El Mediterráneo,<br>puesto en la mesa.</h1>
+        <p class="hero-copy" data-content="introduction">Una cocina cuidada para compartir, en el corazón de Gandía.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#reservar" data-event="click_reservar">Reservar mesa <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="#carta" data-event="click_carta">Ver carta</a>
+        </div>
+        <p class="demo-caption">Imagen conceptual para esta demo</p>
+      </div>
+      <a class="scroll-cue" href="#propuesta"><span>Descubrir</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <section class="journey" aria-label="Tu recorrido">
+      <p class="section-kicker">De la búsqueda a la mesa</p>
+      <ol>
+        <li><span>01</span>Descubres</li>
+        <li><span>02</span>Eliges</li>
+        <li><span>03</span>Consultas</li>
+        <li><span>04</span>Reservas</li>
+      </ol>
+    </section>
+
+    <section class="proposal section" id="propuesta">
+      <div class="section-heading">
+        <p class="section-kicker">La propuesta</p>
+        <h2>Cocina mediterránea,<br>sin distracciones.</h2>
+        <p>Producto, elaboración y una mesa para compartir. Una presentación digital a la altura de la experiencia.</p>
+      </div>
+      <figure class="proposal-figure proposal-wide">
+        <img src="assets/almar-table.webp" alt="Mesa mediterránea conceptual junto al mar" loading="lazy">
+        <figcaption><span>01</span> Compartir la mesa</figcaption>
+      </figure>
+      <figure class="proposal-figure proposal-tall">
+        <img src="assets/almar-dessert.webp" alt="Postre mediterráneo conceptual" loading="lazy">
+        <figcaption><span>02</span> Cuidar cada detalle</figcaption>
+      </figure>
+      <p class="visual-note">Imágenes de ambientación creadas para la demo. No representan platos oficiales de Almar.</p>
+    </section>
+
+    <section class="menu section" id="carta" aria-labelledby="menu-title">
+      <div class="section-heading menu-heading">
+        <p class="section-kicker">La carta</p>
+        <h2 id="menu-title">Elegir debería<br>ser así de fácil.</h2>
+        <p>Una estructura clara, pensada para consultar desde el móvil antes de reservar.</p>
+      </div>
+      <div class="menu-panel">
+        <div class="menu-notice" role="note">
+          <span aria-hidden="true">i</span>
+          <p><strong>Contenido de demostración</strong>Pendiente de información oficial del restaurante.</p>
+        </div>
+        <div class="menu-tabs" role="tablist" aria-label="Categorías de la carta"></div>
+        <div class="menu-list" aria-live="polite"></div>
+        <a class="text-link" href="#reservar" data-event="click_reservar">¿Ya lo tienes claro? Reserva tu mesa <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="booking section" id="reservar" aria-labelledby="booking-title">
+      <div class="booking-intro">
+        <p class="section-kicker">Tu mesa</p>
+        <h2 id="booking-title">Un paso.<br>Y a disfrutar.</h2>
+        <p>Elige cómo contactar. Sin formularios largos ni búsquedas innecesarias.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card primary-contact" data-link="phone" data-event="click_telefono">
+          <span class="contact-icon" aria-hidden="true">☎</span>
+          <span><small>Reserva ahora</small><strong>Llamar</strong></span>
+          <b aria-hidden="true">→</b>
+        </a>
+        <button class="contact-card demo-contact" type="button" data-event="click_whatsapp">
+          <span class="contact-icon" aria-hidden="true">✦</span>
+          <span><small>Acceso directo</small><strong>WhatsApp</strong></span>
+          <em>Demo</em>
+        </button>
+        <a class="contact-card" data-link="maps" target="_blank" rel="noreferrer" data-event="click_como_llegar">
+          <span class="contact-icon" aria-hidden="true">⌖</span>
+          <span><small data-content="address">Carrer Ciutat de Barcelona, 10 · Gandía</small><strong>Cómo llegar</strong></span>
+          <b aria-hidden="true">↗</b>
+        </a>
+      </div>
+      <p class="booking-footnote">La reserva online y WhatsApp se activarían con la información oficial del restaurante.</p>
+    </section>
+
+    <section class="comparison section" aria-labelledby="comparison-title">
+      <div class="comparison-heading">
+        <p class="section-kicker">La oportunidad</p>
+        <h2 id="comparison-title">Una experiencia digital a la altura de su reputación.</h2>
+        <p>El restaurante ya tiene lo más importante. La propuesta mejora cómo lo descubren y cómo llegan hasta la reserva.</p>
+      </div>
+      <div class="comparison-grid">
+        <article class="before-card">
+          <span>Antes</span>
+          <h3>Más pasos,<br>más fricción.</h3>
+          <div class="route muted-route"><i>Google</i><i>Buscar información</i><i>Localizar la carta</i><i>Encontrar contacto</i></div>
+        </article>
+        <article class="after-card">
+          <span>Propuesta Nexaro</span>
+          <h3>De Google<br>a la mesa.</h3>
+          <div class="route"><i>Google</i><i>Información clara</i><i>Carta</i><i>Reservar</i></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">A</span><span><strong>Almar</strong><small>Gandía</small></span></div>
+    <p data-content="address">Carrer Ciutat de Barcelona, 10 · Gandía</p>
+    <a data-link="phone" data-content="phoneDisplay">962 86 54 35</a>
+    <small>Demo conceptual preparada por Nexaro</small>
+  </footer>
+
+  <nav class="mobile-actions" aria-label="Acciones rápidas">
+    <a href="#carta" data-event="click_carta"><span aria-hidden="true">≡</span>Carta</a>
+    <a class="mobile-book" href="#reservar" data-event="click_reservar"><span aria-hidden="true">●</span>Reservar</a>
+  </nav>
+
+  <div class="toast" role="status" aria-live="polite">WhatsApp se activará con el número oficial.</div>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

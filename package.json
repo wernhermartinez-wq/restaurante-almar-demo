@@ -1,0 +1,10 @@
+{
+  "name": "nexaro-demo-restaurante-almar",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node scripts/check-build.js",
+    "lint": "node scripts/check-build.js"
+  }
+}
