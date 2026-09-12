@@ -3,7 +3,22 @@
 
   document.querySelectorAll('[data-content]').forEach((element) => {
     const value = content.restaurant[element.dataset.content];
-    if (value) element[element.dataset.content === 'headline' ? 'innerHTML' : 'textContent'] = value.replace('\n', '<br>');
+    if (!value) return;
+
+    if (element.dataset.content === 'headline') {
+      const lines = value.split('\n');
+      element.replaceChildren(...lines.map((line) => {
+        const mask = document.createElement('span');
+        const text = document.createElement('span');
+        mask.className = 'title-wave-line';
+        text.textContent = line;
+        mask.appendChild(text);
+        return mask;
+      }));
+      return;
+    }
+
+    element.textContent = value;
   });
 
   document.querySelectorAll('[data-link="phone"]').forEach((link) => link.href = `tel:${content.restaurant.phoneHref}`);
