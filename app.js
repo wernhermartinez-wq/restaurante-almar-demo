@@ -59,12 +59,6 @@
     element.addEventListener('click', () => track(element.dataset.event));
   });
 
-  const toast = document.querySelector('.toast');
-  document.querySelector('.demo-contact').addEventListener('click', () => {
-    toast.classList.add('visible');
-    window.setTimeout(() => toast.classList.remove('visible'), 2600);
-  });
-
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 32), { passive: true });
 })();
